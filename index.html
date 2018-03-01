@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+    <meta charset="utf-8" />
+	<meta name="designer" content="Markus Deuerlein, entidia" />
+    <title>Digital Touch Signatures</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+    <h1 class="head">Digital Touch Signature</h1>
+
+    <p class="info">
+        It's HTML5 canvas based and uses variable width Bézier curve interpolation based on Smoother Signatures post by Square. It works in all modern desktop and mobile browsers and doesn't depend on any external libraries.
+    </p>
+
+
+
+    <div id="signature-pad" class="signature-pad">
+
+        <div class="description">PLEASE SIGN HERE</div>
+        <div class="signature-pad--body"><canvas></canvas></div>
+
+        <div class="signature-pad--footer">
+            <div class="signature-pad--actions">
+                <button type="button" class="button clear" data-action="clear">Clear sign field</button>
+                <button type="button" class="button save" data-action="save-png">Download Sign</button>
+            </div>
+        </div>
+        <div id="downloadlink" style="text-align: center;margin-top:15px;height:50px;padding-top: 15px;"></div>
+
+    </div>
+
+
+    <div class="footer"><small>2018 demo version by <a href="https://entidia.de">entidia</small></div>
+
+</div>
+
+<script src="assets/app.js"></script>
+<script src="assets/init.js"></script>
+
+</body>	
+</html>
